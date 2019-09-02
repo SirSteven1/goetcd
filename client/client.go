@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/yanHuang/goetcd/server"
+	"go.etcd.io/etcd/clientv3"
 
-	"github.com/coreos/etcd/clientv3"
 )
 
 //Master master node message
