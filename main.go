@@ -14,7 +14,7 @@
 
 package main
 
-import "goetcd/cmd"
+import "github.com/yanHuang/goetcd/cmd"
 
 func main() {
 	cmd.Execute()

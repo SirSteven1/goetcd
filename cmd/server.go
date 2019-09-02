@@ -15,7 +15,7 @@
 package cmd
 
 import (
-	"goetcd/server"
+	"github.com/yanHuang/goetcd/server"
 
 	"github.com/spf13/cobra"
 )
@@ -33,9 +33,9 @@ to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		//加载server
 		info := server.ServiceInfo{
-			IP: "localhost:2379",
+			IP: "192.168.2.78:2379",
 		}
-		s, _ := server.NewService("caixinqi", info, []string{"localhost:2379"})
+		s, _ := server.NewService("demo", info, []string{"192.168.2.78:2379"})
 		s.Start()
 	},
 }

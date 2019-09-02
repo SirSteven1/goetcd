@@ -15,7 +15,7 @@
 package cmd
 
 import (
-	"goetcd/client"
+	"github.com/yanHuang/goetcd/client"
 
 	"github.com/spf13/cobra"
 )
@@ -32,7 +32,7 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		//加载client
-		master, _ := client.NewMaster([]string{"localhost:2379"}, "/Users/caixinqi/Documents/Golib/src/goetcd/caixinqi")
+		master, _ := client.NewMaster([]string{"192.168.2.78:2379"}, "/root/goetcd/demo")
 		master.WatchNodes()
 	},
 }

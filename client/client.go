@@ -4,10 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"goetcd/server"
 	"log"
 	"sync"
 	"time"
+
+	"github.com/yanHuang/goetcd/server"
 
 	"github.com/coreos/etcd/clientv3"
 )
