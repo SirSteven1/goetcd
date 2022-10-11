@@ -226,6 +226,7 @@ systemctl restart etcd
 > * Version 作用域为 key, 某一个 key 的修改次数(从创建到删除)，与以上三个 Revision 无关
 
 关于 watch 哪个版本：
+
 1、watch 某一个 key 时，想要从历史记录开始就用 CreateRevision，最新一条(这一条直接返回)开始就用 ModRevision
 
 2、watch 某个前缀，就必须使用 Revision
